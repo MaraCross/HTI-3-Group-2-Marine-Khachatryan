@@ -1,4 +1,4 @@
-def recur(start, a, b, liss,):
+def recur(start, a, b, liss):
     count = 0
     if b == 0:
         print(' '.join(map(str, liss)))
