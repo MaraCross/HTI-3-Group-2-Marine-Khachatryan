@@ -1,7 +1,9 @@
 def game_2():
     import random
-    f = open('fruits.txt').read().splitlines()
+    f1 = open('fruits.txt')
+    f = f1.read().splitlines()
     line = random.choice(f)
+    f1.close()
     # print(line)
     s=list('_'*len(line))
     i = 4
