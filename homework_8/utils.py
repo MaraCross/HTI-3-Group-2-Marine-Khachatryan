@@ -1,6 +1,4 @@
 import sys
-start = sys.argv[1]
-stop = sys.argv[2]
 def gen(start, stop):
     for i in range(int(start),int(stop)):
         k = 0
@@ -13,7 +11,8 @@ def gen(start, stop):
                 break
         if k == len(str(i)):
             yield i
-            
-for i in gen(start, stop):
-    print(i, end=' ')
-    
+if __name__=="__main__":
+    start = sys.argv[1]
+    stop = sys.argv[2]
+    for i in gen(start, stop):
+        print(i, end=' ')   
